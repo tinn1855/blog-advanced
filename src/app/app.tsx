@@ -1,11 +1,7 @@
-import NxWelcome from './nx-welcome';
+import { AppRoutes } from './routes';
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="blog-advanced" />
-    </div>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
