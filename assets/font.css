@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Sen";
-  src: url(/assets/font/sen/Sen-Regular.ttf);
+  src: url(/assets/font/sen/sen-regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Sen";
-  src: url(/assets/font/sen/Sen-Medium.ttf);
+  src: url(/assets/font/sen/sen-medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Sen";
-  src: url(/assets/font/sen/Sen-Bold.ttf);
+  src: url(/assets/font/sen/sen-bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
