@@ -12,11 +12,50 @@
   .icon-bars {
     display: block;
   }
-  /* COMPONENTS  */
 
+  /* COMPONENTS  */
+  .bg-image {
+    height: 600px;
+  }
   /* UTILITES  */
   .py-3 {
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+  .pt-20 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* BASE  */
+  .container {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 10px;
+  }
+
+  /* LAYOUT  */
+  .w-full {
+    width: 100%;
+  }
+  .w-50 {
+    width: 100%;
+  }
+
+  /* COMPONENTS  */
+  .heading-display {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  /* UTILITES  */
+  .py-3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .pt-16 {
+    padding-top: 64px;
   }
 }
