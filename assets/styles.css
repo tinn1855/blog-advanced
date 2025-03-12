@@ -15,6 +15,12 @@
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
+  color: #232536;
+}
+p,
+span,
+address {
+  color: var(--color-medium-gray);
 }
 
 a {
@@ -362,6 +368,12 @@ h6 {
 .mt-4 {
   margin-top: 16px;
 }
+.mt-5 {
+  margin-top: 20px;
+}
+.mt-6 {
+  margin-top: 24px;
+}
 .mt-8 {
   margin-top: 32px;
 }
@@ -391,7 +403,9 @@ h6 {
   border-width: 1px;
   border-style: solid;
 }
-
+.-tracking-1 {
+  letter-spacing: -1px;
+}
 .-tracking-2 {
   letter-spacing: -2px;
 }
@@ -408,6 +422,9 @@ h6 {
 }
 .font-medium {
   font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
 }
 
 .text-center {
@@ -426,8 +443,4 @@ h6 {
 }
 .bottom-0 {
   bottom: 0;
-}
-.z-10 {
-  z-index: 10;
-  opacity: 1;
 }
