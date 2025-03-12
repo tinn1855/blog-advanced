@@ -250,8 +250,13 @@ h6 {
 .item-author {
   background-color: var(--color-light-gray);
   text-align: center;
-  width: 25%;
   padding: 40px;
+}
+
+.grid-author {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
 }
 
 .item-author:hover {
