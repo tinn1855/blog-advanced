@@ -280,6 +280,12 @@ h6 {
   width: 50%;
 }
 
+.list-category {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
 .item-post:hover {
   background-color: var(--color-light-yellow);
 }
