@@ -291,6 +291,17 @@ h6 {
   background-color: var(--color-primary);
 }
 
+.list-post {
+  display: flex;
+  gap: 32px;
+}
+.featured-post {
+  width: 60%;
+}
+.all-post {
+  width: 40%;
+}
+
 /* UTILITIES STYLE  */
 .px-4 {
   padding-left: 16px;

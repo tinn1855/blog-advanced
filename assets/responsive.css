@@ -13,10 +13,29 @@
     display: block;
   }
 
+  .w-full {
+    width: 100%;
+  }
+
   /* COMPONENTS  */
   .bg-image {
     height: 600px;
   }
+  .list-post {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .featured-post {
+    width: 100%;
+  }
+  .all-post {
+    width: 100%;
+  }
+  .item-post {
+    padding: 32px;
+  }
+
   /* UTILITES  */
   .py-3 {
     padding-top: 12px;
