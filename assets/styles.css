@@ -258,6 +258,13 @@ h6 {
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
 }
+.list-blog {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  display: none;
+}
 
 .item-author:hover {
   background-color: var(--color-light-yellow);

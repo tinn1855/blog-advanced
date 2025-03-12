@@ -45,6 +45,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
   }
+  .list-blog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
   /* UTILITES  */
   .py-3 {
@@ -120,6 +126,15 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
+  .list-blog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .title {
+    display: block;
+  }
 
   /* UTILITES  */
   .py-3 {
@@ -128,5 +143,8 @@
   }
   .pt-16 {
     padding-top: 64px;
+  }
+  .hidden {
+    display: none;
   }
 }
