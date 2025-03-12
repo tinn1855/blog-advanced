@@ -265,6 +265,21 @@ h6 {
   margin-top: 8px;
 }
 
+.section {
+  display: flex;
+  gap: 60px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.about-us {
+  width: 50%;
+}
+.our-mission {
+  width: 50%;
+}
+
 .item-post:hover {
   background-color: var(--color-light-yellow);
 }
