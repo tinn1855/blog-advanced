@@ -74,6 +74,11 @@
     font-weight: 700;
     line-height: normal;
   }
+  .heading-h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+  }
   .section {
     display: flex;
     flex-direction: column;
@@ -91,6 +96,19 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+  }
+  .absolute {
+    position: static;
+  }
+  .our-story-content {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .our-story img {
+    width: 100%;
   }
   /* UTILITES  */
   .py-3 {

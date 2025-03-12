@@ -285,6 +285,17 @@ h6 {
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
 }
+.our-story img {
+  width: auto;
+}
+.our-story-content {
+  background-color: white;
+  width: 45%;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
 
 .item-post:hover {
   background-color: var(--color-light-yellow);
@@ -462,7 +473,10 @@ h6 {
 
 .absolute {
   position: absolute;
+  bottom: 0;
+  right: 0;
 }
+
 .relative {
   position: relative;
 }
