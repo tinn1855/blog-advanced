@@ -6,6 +6,7 @@
     <title>Blog Advanced</title>
     <link rel="stylesheet" href="assets/font.css" />
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
   </head>
   <body>
     <!-- header -->
@@ -33,7 +34,7 @@
           >POST ON <strong class="font-black">START UP</strong></span
         >
         <div class="w-2-3">
-          <h1 class="heading-display py-6">
+          <h1 class="heading-display text-white py-6">
             Step-by-step guide to choosing great font pairs
           </h1>
         </div>
@@ -56,29 +57,31 @@
     </section>
     <!-- end hero section -->
     <!-- post  -->
-    <section class="container flex gap-8">
+    <section class="container flex gap-8 my-32">
       <!-- featured post -->
       <div class="w-60">
         <h3 class="heading-h2">Featured Post</h3>
-        <article class="border p-8">
+        <article class="border p-8 mt-8">
           <div>
             <img src="assets/images/post/thumbnail.png" alt="Thumbnail Post" />
           </div>
-          <div>
-            <span>By <a href="#" class="text-secondary">John Doe</a> </span>
-            <span>|</span>
-            <time>May 23, 2022</time>
+          <div class="mt-8">
+            <div>
+              <span>By <a href="#" class="text-secondary">John Doe</a> </span>
+              <span>|</span>
+              <time>May 23, 2022</time>
+            </div>
+            <h2 class="mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </h2>
+            <p class="leading-7">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
           </div>
-          <h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </h2>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident.
-          </p>
-          <div>
+          <div class="mt-8">
             <button class="btn-primary">Read More></button>
           </div>
         </article>
@@ -90,7 +93,7 @@
           <h3 class="heading-h2">All Posts</h3>
           <a href="#" class="text-secondary">View All</a>
         </div>
-        <article class="p-8">
+        <article class="item-post mt-8">
           <div>
             <span>By <a href="#" class="text-secondary">John Doe</a> </span>
             <span>|</span>
@@ -98,7 +101,7 @@
           </div>
           <h2>8 Figma design systems that you can download for free today.</h2>
         </article>
-        <article class="p-8">
+        <article class="item-post">
           <div>
             <span>By <a href="#" class="text-secondary">John Doe</a> </span>
             <span>|</span>
@@ -106,7 +109,7 @@
           </div>
           <h2>8 Figma design systems that you can download for free today.</h2>
         </article>
-        <article class="p-8">
+        <article class="item-post">
           <div>
             <span>By <a href="#" class="text-secondary">John Doe</a> </span>
             <span>|</span>
@@ -114,7 +117,7 @@
           </div>
           <h2>8 Figma design systems that you can download for free today.</h2>
         </article>
-        <article class="p-8">
+        <article class="item-post">
           <div>
             <span>By <a href="#" class="text-secondary">John Doe</a> </span>
             <span>|</span>
@@ -161,35 +164,54 @@
     </section>
     <!-- end about us  -->
     <!-- choose a category -->
-    <section class="container">
+    <section class="container my-32">
       <h3 class="heading-h2 text-center">Choose A Category</h3>
-      <div class="flex gap-8">
-        <div class="border p-8">
-          <div>
-            <img src="https://placehold.co/48x48" alt="icon" />
+      <div class="flex gap-8 mt-12">
+        <div class="p-8 item-category">
+          <div class="">
+            <img
+              src="assets/images/category/business.png"
+              alt=""
+              class="icon"
+              width="24px"
+            />
           </div>
-          <h3>Business</h3>
+          <h3 class="heading-h3">Business</h3>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="item-category">
+          <div>
+            <img
+              src="assets/images/category/startup.png"
+              alt="icon"
+              class="icon"
+            />
+          </div>
+          <h3 class="heading-h3">Startup</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
         </div>
-        <div class="border p-8">
+        <div class="item-category">
           <div>
-            <img src="https://placehold.co/48x48" alt="icon" />
+            <img
+              src="assets/images/category/economy.png"
+              alt="icon"
+              class="icon"
+            />
           </div>
-          <h3>Startup</h3>
+          <h3 class="heading-h3">Economy</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
         </div>
-        <div class="border p-8">
+        <div class="item-category">
           <div>
-            <img src="https://placehold.co/48x48" alt="icon" />
+            <img
+              src="assets/images/category/technology.png"
+              alt="icon"
+              class="icon"
+            />
           </div>
-          <h3>Economy</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        </div>
-        <div class="border p-8">
-          <div>
-            <img src="https://placehold.co/48x48" alt="icon" />
-          </div>
-          <h3>Technology</h3>
+          <h3 class="heading-h3">Technology</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
         </div>
       </div>
@@ -219,9 +241,9 @@
     </section>
     <!-- end our story -->
     <!-- list of author -->
-    <section class="container">
+    <section class="container mt-32">
       <h3 class="heading-h2 text-center">List Of Author</h3>
-      <div class="flex gap-8">
+      <div class="flex gap-8 mt-12">
         <div class="item-author">
           <div>
             <img
@@ -232,111 +254,117 @@
           </div>
           <h3 class="heading-h3">Floyd Miles</h3>
           <span>Content Writer @Company</span>
-          <div>
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
+          <div class="flex gap-4 row-center">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </div>
         </div>
         <div class="item-author">
           <div>
             <img
-              src="assets/images/author/author-01.png"
+              src="assets/images/author/author-02.png"
               alt="Author"
               class="avatar"
             />
           </div>
-          <h3 class="heading-h3">Floyd Miles</h3>
+          <h3 class="heading-h3">Dianne Russell</h3>
           <span>Content Writer @Company</span>
-          <div>
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
+          <div class="flex gap-4 row-center">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </div>
         </div>
         <div class="item-author">
           <div>
             <img
-              src="assets/images/author/author-01.png"
+              src="assets/images/author/author-03.png"
               alt="Author"
               class="avatar"
             />
           </div>
-          <h3 class="heading-h3">Floyd Miles</h3>
+          <h3 class="heading-h3">Jenny Wilson</h3>
           <span>Content Writer @Company</span>
-          <div>
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
+          <div class="flex gap-4 row-center">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </div>
         </div>
         <div class="item-author">
-          <a>
-            <img
-              src="assets/images/author/author-01.png"
-              alt="Author"
-              class="avatar"
-            />
-          </a>
-          <h3 class="heading-h3">Floyd Miles</h3>
-          <span>Content Writer @Company</span>
+          <img
+            src="assets/images/author/author-04.png"
+            alt="Author"
+            class="avatar"
+          />
           <div>
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
-            <img src="https://placehold.co/16x16" alt="icon" />
+            <h3 class="heading-h3">Leslie Alexander</h3>
+            <span>Content Writer @Company</span>
+          </div>
+          <div class="flex gap-4 row-center">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </div>
         </div>
       </div>
     </section>
     <!-- end list of author  -->
     <!-- list blog (website) -->
-    <section class="container flex row-between">
+    <section class="container flex row-between my-24">
       <div>
         <span>We are</span>
         <h3>Featured in</h3>
       </div>
       <div>
-        <img src="https://placehold.co/160x32" alt="" />
+        <img src="assets/images/logo-forum/logo-01.png" alt="logo forum" />
       </div>
       <div>
-        <img src="https://placehold.co/160x32" alt="" />
+        <img src="assets/images/logo-forum/logo-02.png" alt="logo forum" />
       </div>
       <div>
-        <img src="https://placehold.co/160x32" alt="" />
+        <img src="assets/images/logo-forum/logo-03.png" alt="logo forum" />
       </div>
       <div>
-        <img src="https://placehold.co/160x32" alt="" />
+        <img src="assets/images/logo-forum/logo-04.png" alt="logo forum" />
       </div>
       <div>
-        <img src="https://placehold.co/160x32" alt="" />
+        <img src="assets/images/logo-forum/logo-05.png" alt="logo forum" />
       </div>
     </section>
     <!-- end list blog (website) -->
     <!-- feedback -->
     <section class="container bg-light-yellow">
-      <div class="py-20 px-28 flex">
-        <div>
+      <div class="py-20 px-28 flex gap-20">
+        <div class="w-2-3">
           <span>TESTIMONIALs</span>
-          <h3>What people say about our blog</h3>
-          <p>
+          <h3 class="heading-h2">What people say about our blog</h3>
+          <p class="leading-7">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
           </p>
         </div>
         <div class="border"></div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+        <div class="flex-col row-between">
           <div>
-            <div>
+            <p class="heading-h4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="flex row-between">
+            <div class="flex gap-4 items-center">
               <div>
-                <img src="https://placehold.co/48" alt="" />
+                <img
+                  src="assets/images/feedback/reader-01.png"
+                  alt="Reader"
+                  class="avatar-reader"
+                />
               </div>
               <div>
                 <h3>Jonathan Vallem</h3>
@@ -344,11 +372,11 @@
               </div>
             </div>
             <div>
-              <button>
-                <img src="https://placehold.co/48" alt="button left" />
+              <button class="btn-arrow">
+                <i class="fa-solid fa-arrow-left"></i>
               </button>
-              <button>
-                <img src="https://placehold.co/48" alt="button right" />
+              <button class="btn-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -357,7 +385,7 @@
     </section>
     <!-- end feedback  -->
     <!-- join our team -->
-    <section class="container text-center">
+    <section class="container text-center w-1-3 my-32">
       <h2 class="heading-h2">Join our team to be a part of our story</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -367,7 +395,7 @@
     </section>
     <!-- end join our team  -->
     <!-- footer  -->
-    <footer class="bg-black">
+    <footer class="bg-black py-15">
       <div class="container">
         <div class="flex row-between">
           <div>
@@ -381,22 +409,24 @@
             <a href="#">Privacy Policy</a>
           </nav>
         </div>
-        <div class="bg-white-5 py-20 px-16 gap-16 flex">
-          <div class="w-50">
-            <h2 class="heading-h2 -tracking-2">
-              Subscribe to our news letter to get latest updates and news
-            </h2>
-          </div>
-          <div class="w-50 flex gap-6">
-            <div class="w-60">
-              <input
-                type="text"
-                placeholder="Enter Your Email"
-                class="w-full py-5 px-4"
-              />
+        <div class="bg-white-5 py-20 px-16 my-12">
+          <div class="gap-16 flex">
+            <div class="w-50">
+              <h2 class="heading-h2 -tracking-2 text-white">
+                Subscribe to our news letter to get latest updates and news
+              </h2>
             </div>
-            <div class="w-40">
-              <button class="btn-primary">Subscribe</button>
+            <div class="w-50 flex gap-6">
+              <div class="w-60">
+                <input
+                  type="text"
+                  placeholder="Enter Your Email"
+                  class="py-5 px-4 w-90"
+                />
+              </div>
+              <div class="w-40">
+                <button class="btn-primary">Subscribe</button>
+              </div>
             </div>
           </div>
         </div>
@@ -409,11 +439,11 @@
             </div>
           </div>
           <div>
-            <div class="flex gap-6">
-              <img src="https://placehold.co/16" alt="icon" />
-              <img src="https://placehold.co/16" alt="icon" />
-              <img src="https://placehold.co/16" alt="icon" />
-              <img src="https://placehold.co/16" alt="icon" />
+            <div class="flex gap-6 row-center text-medium-gray">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
             </div>
           </div>
         </div>
