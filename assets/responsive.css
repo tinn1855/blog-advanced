@@ -1,2 +1,22 @@
 @media (max-width: 1024px) {
+  /* BASE  */
+  .container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0px 20px;
+  }
+  /* LAYOUT  */
+  .nav-links {
+    display: none;
+  }
+  .icon-bars {
+    display: block;
+  }
+  /* COMPONENTS  */
+
+  /* UTILITES  */
+  .py-3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
