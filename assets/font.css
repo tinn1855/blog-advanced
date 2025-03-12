@@ -1,43 +1,43 @@
 @font-face {
   font-family: "Sen";
-  src: url(/assets/font/sen/sen-regular.ttf);
+  src: url(../assets/font/sen/sen-regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Sen";
-  src: url(/assets/font/sen/sen-medium.ttf);
+  src: url(../assets/font/sen/sen-medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Sen";
-  src: url(/assets/font/sen/sen-bold.ttf);
+  src: url(../assets/font/sen/sen-bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url(/assets/font/inter/inter-regular.ttf);
+  src: url(../assets/font/inter/inter-regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url(/assets/font/inter/inter-semibold.ttf);
+  src: url(../assets/font/inter/inter-semibold.ttf);
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url(/assets/font/inter/inter-bold.ttf);
+  src: url(../assets/font/inter/inter-bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url(/assets/font/inter/inter-black.ttf);
+  src: url(../assets/font/inter/inter-black.ttf);
   font-weight: 900;
   font-style: normal;
 }
