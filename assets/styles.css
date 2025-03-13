@@ -300,6 +300,7 @@ h6 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+  margin-top: 48px;
 }
 .our-story img {
   width: auto;
@@ -341,6 +342,8 @@ h6 {
 .list-post {
   display: flex;
   gap: 32px;
+  margin-top: 96px;
+  margin-bottom: 96px;
 }
 .featured-post {
   width: 60%;
@@ -538,11 +541,4 @@ h6 {
 
 .relative {
   position: relative;
-}
-
-.right-0 {
-  right: 0;
-}
-.bottom-0 {
-  bottom: 0;
 }
