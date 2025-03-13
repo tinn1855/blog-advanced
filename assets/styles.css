@@ -357,6 +357,11 @@ h6 {
   width: 40%;
 }
 
+.join-our-team {
+  width: 33.33%;
+  text-align: center;
+}
+
 /* UTILITIES STYLE  */
 .px-4 {
   padding-left: 16px;
