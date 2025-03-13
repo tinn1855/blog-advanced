@@ -26,6 +26,9 @@ address {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: var(--color-primary);
+}
 address {
   font-style: normal;
 }
@@ -162,6 +165,8 @@ h6 {
 }
 
 .btn-primary {
+  position: relative;
+  overflow: hidden;
   background-color: var(--color-primary);
   width: 204px;
   height: 56px;
@@ -170,21 +175,65 @@ h6 {
   font-family: "Sen";
   font-weight: 700;
   font-size: 18px;
+  transition: color 0.3s ease-in-out;
 }
-.btn-primary:hover {
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
   background-color: var(--color-dark-yellow);
+  transition: left 0.3s ease-in-out;
+  z-index: 0;
 }
+.btn-primary:hover::before {
+  left: 0;
+}
+.btn-primary span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+  color: var(--color-black);
+}
+
 .btn-secondary {
+  position: relative;
+  overflow: hidden;
   background-color: var(--color-white);
   color: var(--color-black);
   width: 180px;
   height: 56px;
   cursor: pointer;
   border: none;
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  transition: color 0.3s ease-in-out;
 }
+
+.btn-secondary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary);
+  transition: left 0.3s ease-in-out;
+  z-index: 0;
+}
+.btn-secondary:hover::before {
+  left: 0;
+}
+.btn-secondary span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+  color: var(--color-black);
+}
+
 .btn-arrow {
   background-color: var(--color-white);
   padding: 16px 18px;
@@ -270,8 +319,10 @@ h6 {
 
 .item-author:hover {
   background-color: var(--color-light-yellow);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-3px);
+  box-shadow: 3px 5px 8px var(--color-medium-gray);
 }
-
 .item-post {
   padding: 32px 112px 32px 32px;
 }
@@ -316,6 +367,7 @@ h6 {
 
 .item-post:hover {
   background-color: var(--color-light-yellow);
+  transition: all 0.3s ease-in-out;
 }
 
 .icon {
@@ -337,6 +389,9 @@ h6 {
 }
 .item-category:hover {
   background-color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-3px);
+  box-shadow: 3px 5px 8px var(--color-medium-gray);
 }
 
 .list-post {
