@@ -164,7 +164,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <a href="#" class="text-secondary font-bold">Read More></a>
+          <a href="#" rel="bookmark" class="text-secondary font-bold">Read More></a>
         </div>
         <div class="our-mission">
           <h4>OUR MISSION</h4>
@@ -473,54 +473,52 @@
     <!-- footer  -->
     <footer class="bg-black py-15">
       <div class="container">
-        <div class="flex row-between">
+        <div class="footer-top">
           <div>
             <img src="assets/images/logo.png" alt="" />
           </div>
-          <nav class="flex gap-6">
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Privacy Policy</a>
+          <nav class="nav-footer">
+            <a href="#" rel="home" class="text-white">Home</a>
+            <a href="#" rel="" class="text-white">Blog</a>
+            <a href="#" rel="" class="text-white">About Us</a>
+            <a href="#" rel="" class="text-white">Contact Us</a>
+            <a href="#" rel="privacy-policy" class="text-white">Privacy Policy</a>
           </nav>
         </div>
-        <div class="bg-white-5 py-20 px-16 my-12">
-          <div class="gap-16 flex">
-            <div class="w-50">
-              <h2 class="heading-h2 -tracking-2 text-white">
-                Subscribe to our news letter to get latest updates and news
-              </h2>
-            </div>
-            <div class="w-50 flex gap-6">
-              <div class="w-60">
-                <input
-                  type="text"
-                  placeholder="Enter Your Email"
-                  class="py-5 px-4 w-90"
-                />
+        <div class="bg-white-5">
+          <div class="newsletter-content">
+              <div>
+                <h2 class="heading-h2 text-white -tracking-2">Subscribe to our news letter to get latest updates and news</h2>
               </div>
-              <div class="w-40">
-                <button class="btn-primary">Subscribe</button>
+              <div class="newsletter-form">
+                  <div class="">
+                    <input type="email" placeholder="Enter Your Email" class="email-input">
+                  </div>
+                  <button class="btn-primary">Subscribe</button>
               </div>
-            </div>
           </div>
         </div>
-        <div class="flex row-between text-white">
-          <div>
+        <div class="social">
+          <div class="">
             <address>Finstreet 118 2561 Fintown</address>
             <div>
               <span>Hello@finsweet.com</span>
               <span>020 7993 2905</span>
             </div>
           </div>
-          <div>
-            <div class="flex gap-6 row-center text-medium-gray">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
+          <div class="flex gap-6 row-center text-medium-gray">
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-facebook text-medium-gray"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-twitter text-medium-gray"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-instagram text-medium-gray"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-linkedin text-medium-gray"></i>
+            </a>
           </div>
         </div>
       </div>

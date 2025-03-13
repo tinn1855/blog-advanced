@@ -56,6 +56,11 @@
     padding: 40px 48px;
     column-gap: 60px;
   }
+  .newsletter-content {
+    display: block;
+    gap: 64px;
+    padding: 80px 96px;
+  }
 
   /* UTILITES  */
   .py-3 {
@@ -68,7 +73,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   /* BASE  */
   .container {
     max-width: 100%;
@@ -154,6 +159,55 @@
   }
   .join-our-team {
     width: 100%;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .newsletter-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 10px;
+  }
+  .newsletter-content h2 {
+    text-align: center;
+  }
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .email-input {
+    padding: 18px 16px;
+    border: 1px solid var(--color-dark-gray);
+    font-size: 16px;
+    outline: none;
+    width: 90%;
+    background: transparent;
+    color: white;
+  }
+  .btn-primary {
+    background-color: var(--color-primary);
+    height: 56px;
+    width: 100%;
+    cursor: pointer;
+    font-family: "Sen";
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
   }
 
   /* UTILITES  */

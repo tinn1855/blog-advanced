@@ -26,18 +26,10 @@ address {
 a {
   text-decoration: none;
 }
-
 address {
   font-style: normal;
 }
-input {
-  background-color: transparent;
-  color: white;
-  border: var(--color-dark-gray);
-  outline: none;
-  border-style: solid;
-  border-width: 1px;
-}
+
 h1,
 h2,
 h3,
@@ -360,6 +352,42 @@ h6 {
 .join-our-team {
   width: 33.33%;
   text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-footer {
+  display: flex;
+  gap: 24px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 24px;
+}
+.email-input {
+  padding: 18px 16px;
+  border: 1px solid var(--color-dark-gray);
+  font-size: 16px;
+  outline: none;
+  width: 250px;
+  background: transparent;
+  color: white;
+}
+
+.newsletter-content {
+  display: flex;
+  gap: 64px;
+  padding: 96px 80px;
+  margin: 48px 0px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* UTILITIES STYLE  */
