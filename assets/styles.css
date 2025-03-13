@@ -25,7 +25,6 @@ address {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
 }
 
 address {
@@ -284,8 +283,10 @@ h6 {
 .item-post {
   padding: 32px 112px 32px 32px;
 }
-.item-post h2 {
+.item-post h4 {
   margin-top: 8px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .section {
@@ -331,7 +332,6 @@ h6 {
 }
 .item-category {
   padding: 32px;
-  cursor: pointer;
   background-color: var(--color-white);
   color: var(--color-medium-gray);
   border-color: #6d6e764d;
@@ -449,6 +449,9 @@ h6 {
 
 .text-white {
   color: var(--color-white);
+}
+.text-black {
+  color: var(--color-black);
 }
 .text-primary {
   color: var(--color-primary);

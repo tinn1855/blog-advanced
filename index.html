@@ -20,11 +20,11 @@
           <i class="fa-solid fa-bars text-white"></i>
         </div>
         <div class="flex items-center gap-8 nav-links">
-          <nav class="flex gap-4">
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+          <nav class="flex gap-4 ">
+            <a href="#" class="text-white">Home</a>
+            <a href="#" class="text-white">Blog</a>
+            <a href="#" class="text-white">About Us</a>
+            <a href="#" class="text-white">Contact Us</a>
           </nav>
           <button class="btn-secondary">Subscribe</button>
         </div>
@@ -34,9 +34,9 @@
     <!-- hero section  -->
     <section class="bg-image text-white">
       <div class="container text-white pt-32 pt-20 pt-16">
-        <span class="tracking-3 text-white"
-          >POST ON <strong class="font-black">START UP</strong></span
-        >
+        <p class="tracking-3 text-white"></p>
+          POST ON <strong class="font-black">START UP</strong>
+        </p>
         <div class="w-2-3 w-full">
           <h1 class="heading-display text-white py-6">
             Step-by-step guide to choosing great font pairs
@@ -44,7 +44,7 @@
         </div>
         <div>
           <span class="text-white"
-            >By <a href="#" class="text-primary">James West</a>
+            >By <a href="#" rel="author" class="text-primary">James West</a>
           </span>
           <span>|</span>
           <time>May 23, 2022</time>
@@ -66,7 +66,7 @@
     <section class="container list-post my-32">
       <!-- featured post -->
       <div class="featured-post">
-        <h3 class="heading-h2">Featured Post</h3>
+        <h2 class="heading-h2">Featured Post</h2>
         <article class="border p-8 mt-8">
           <div>
             <img
@@ -77,14 +77,14 @@
           </div>
           <div class="mt-8">
             <div>
-              <span>By <a href="#" class="text-secondary">John Doe</a> </span>
+              <span>By <a href="#" rel="author" class="text-secondary">John Doe</a> </span>
               <span>|</span>
               <time>May 23, 2022</time>
             </div>
-            <h2 class="mt-4">
+            <h3 class="mt-4 heading-h3 -tracking-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
-            </h2>
+            </h3>
             <p class="leading-7">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -100,40 +100,48 @@
       <!-- all post -->
       <div class="all-post">
         <div class="flex row-between items-center">
-          <h3 class="heading-h2">All Posts</h3>
+          <h2 class="heading-h2">All Posts</h2>
           <a href="#" class="text-secondary">View All</a>
         </div>
-        <article class="item-post mt-8">
-          <div>
-            <span>By <a href="#" class="text-secondary">John Doe</a> </span>
-            <span>|</span>
-            <time>May 23, 2022</time>
-          </div>
-          <h2>8 Figma design systems that you can download for free today.</h2>
+        <article class="item-post mt-8"> 
+            <div>
+              <span>By <a href="#" rel="author" class="text-secondary">John Doe</a> </span>
+              <span>|</span>
+              <time>May 23, 2022</time>
+            </div>
+            <a href="#" rel="bookmark">
+              <h4>8 Figma design systems that you can download for free today.</h4>
+            </a>
         </article>
         <article class="item-post">
           <div>
-            <span>By <a href="#" class="text-secondary">John Doe</a> </span>
+            <span>By <a href="#" rel="author" class="text-secondary">John Doe</a> </span>
             <span>|</span>
             <time>May 23, 2022</time>
           </div>
-          <h2>8 Figma design systems that you can download for free today.</h2>
+          <a href="#" rel="bookmark">
+            <h4>8 Figma design systems that you can download for free today.</h4>
+          </a>
         </article>
         <article class="item-post">
           <div>
-            <span>By <a href="#" class="text-secondary">John Doe</a> </span>
+            <span>By <a href="#" rel="author" class="text-secondary">John Doe</a> </span>
             <span>|</span>
             <time>May 23, 2022</time>
           </div>
-          <h2>8 Figma design systems that you can download for free today.</h2>
+          <a href="#" rel="bookmark">
+            <h4>8 Figma design systems that you can download for free today.</h4>
+          </a>
         </article>
         <article class="item-post">
           <div>
-            <span>By <a href="#" class="text-secondary">John Doe</a> </span>
+            <span>By <a href="#" rel="author" class="text-secondary">John Doe</a> </span>
             <span>|</span>
             <time>May 23, 2022</time>
           </div>
-          <h2>8 Figma design systems that you can download for free today.</h2>
+         <a href="#" rel="bookmark">
+          <h4>8 Figma design systems that you can download for free today.</h4>
+         </a>
         </article>
       </div>
       <!-- end all post  -->
@@ -175,54 +183,62 @@
     <!-- end about us  -->
     <!-- choose a category -->
     <section class="container my-32">
-      <h3 class="heading-h2 text-center">Choose A Category</h3>
+      <h2 class="heading-h2 text-center">Choose A Category</h2>
       <div class="list-category mt-12">
-        <div class="p-8 item-category">
-          <div class="">
-            <img
-              src="assets/images/category/business.png"
-              alt=""
-              class="icon"
-              width="24px"
-            />
-          </div>
-          <h3 class="heading-h3">Business</h3>
-          <div>
+        <div class="item-category">
+          <a href="#">
+            <div class="">
+              <img
+                src="assets/images/category/business.png"
+                alt=""
+                class="icon"
+                width="24px"
+              />
+            </div>
+            <h3 class="heading-h3">Business</h3>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </a>
+        </div>
+        <div class="item-category">
+          <a href="#">
+            <div>
+              <img
+                src="assets/images/category/startup.png"
+                alt="icon"
+                class="icon"
+              />
+            </div>
+            <h3 class="heading-h3">Startup</h3>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-          </div>
+          </a>
         </div>
         <div class="item-category">
-          <div>
-            <img
-              src="assets/images/category/startup.png"
-              alt="icon"
-              class="icon"
-            />
-          </div>
-          <h3 class="heading-h3">Startup</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <a href="#">
+            <div>
+              <img
+                src="assets/images/category/economy.png"
+                alt="icon"
+                class="icon"
+              />
+            </div>
+            <h3 class="heading-h3">Economy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          </a>
         </div>
         <div class="item-category">
-          <div>
-            <img
-              src="assets/images/category/economy.png"
-              alt="icon"
-              class="icon"
-            />
-          </div>
-          <h3 class="heading-h3">Economy</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        </div>
-        <div class="item-category">
-          <div>
-            <img
-              src="assets/images/category/technology.png"
-              alt="icon"
-              class="icon"
-            />
-          </div>
-          <h3 class="heading-h3">Technology</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <a href="#">
+            <div>
+              <img
+                src="assets/images/category/technology.png"
+                alt="icon"
+                class="icon"
+              />
+            </div>
+            <h3 class="heading-h3">Technology</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          </a>
         </div>
       </div>
     </section>
@@ -253,7 +269,7 @@
     <!-- end our story -->
     <!-- list of author -->
     <section class="container mt-32">
-      <h3 class="heading-h2 text-center">List Of Author</h3>
+      <h2 class="heading-h2 text-center">List Of Author</h2>
       <div class="grid-author mt-12">
         <div class="item-author">
           <div>
@@ -264,14 +280,24 @@
             />
           </div>
           <div class="py-5">
-            <h3 class="heading-h3 -tracking-1">Floyd Miles</h3>
-            <span>Content Writer @Company</span>
+            <a href="#" rel="author">
+              <h3 class="heading-h3 -tracking-1">Floyd Miles</h3>
+              <span>Content Writer @Company</span>
+            </a>
           </div>
-          <div class="flex gap-4 row-center">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+          <div class="flex gap-4 row-center text-black">
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-facebook text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-twitter text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-instagram text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-linkedin text-black"></i>
+            </a>
           </div>
         </div>
         <div class="item-author">
@@ -283,14 +309,24 @@
             />
           </div>
           <div class="py-5">
-            <h3 class="heading-h3 -tracking-1">Dianne Russell</h3>
-            <span>Content Writer @Company</span>
+            <a href="#" rel="author">
+              <h3 class="heading-h3 -tracking-1">Dianne Russell</h3>
+              <span>Content Writer @Company</span>
+            </a>
           </div>
-          <div class="flex gap-4 row-center">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+          <div class="flex gap-4 row-center text-black">
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-facebook text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-twitter text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-instagram text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-linkedin text-black"></i>
+            </a>
           </div>
         </div>
         <div class="item-author">
@@ -302,14 +338,24 @@
             />
           </div>
           <div class="py-5">
-            <h3 class="heading-h3 -tracking-1">Jenny Wilson</h3>
-            <span>Content Writer @Company</span>
+            <a href="#" rel="author">
+              <h3 class="heading-h3 -tracking-1">Jenny Wilson</h3>
+              <span>Content Writer @Company</span>
+            </a>
           </div>
-          <div class="flex gap-4 row-center">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+          <div class="flex gap-4 row-center text-black">
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-facebook text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-twitter text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-instagram text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-linkedin text-black"></i>
+            </a>
           </div>
         </div>
         <div class="item-author">
@@ -321,26 +367,35 @@
             />
           </div>
           <div class="py-5">
-            <h3 class="heading-h3 -tracking-1">Leslie Alexander</h3>
-            <span>Content Writer @Company</span>
+            <a href="#" rel="author">
+              <h3 class="heading-h3 -tracking-1">Leslie Alexander</h3>
+              <span>Content Writer @Company</span>
+            </a>
           </div>
-          <div class="flex gap-4 row-center">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+          <div class="flex gap-4 row-center text-black">
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-facebook text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-twitter text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-instagram text-black"></i>
+            </a>
+            <a href="#" rel="icon">
+              <i class="fa-brands fa-linkedin text-black"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
     <!-- end list of author  -->
     <!-- list blog (website) -->
-
-    <h3 class="text-center title">We Are Featured In</h3>
+    <h4 class="text-center title heading-h4">We Are Featured In</h4>
     <section class="container list-blog my-24">
       <div class="hidden">
         <span>We are</span>
-        <h3>Featured in</h3>
+        <h4 class="heading-h4">Featured in</h4>
       </div>
       <div>
         <img src="assets/images/logo-forum/logo-01.png" alt="logo forum" />
@@ -364,7 +419,7 @@
       <div class="feedback">
         <div class="feedback-left">
           <span>TESTIMONIALs</span>
-          <h3 class="heading-h2">What people say about our blog</h3>
+          <h2 class="heading-h2">What people say about our blog</h2>
           <p class="leading-7">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
