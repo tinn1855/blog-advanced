@@ -265,6 +265,17 @@ h6 {
 .title {
   display: none;
 }
+.feedback {
+  display: flex;
+  padding: 80px 96px;
+  column-gap: 80px;
+}
+.feedback-left {
+  width: 30%;
+}
+.feedback-right {
+  width: 65%;
+}
 
 .item-author:hover {
   background-color: var(--color-light-yellow);
