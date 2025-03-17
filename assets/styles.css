@@ -448,6 +448,31 @@ h6 {
   justify-content: space-between;
 }
 
+.marquee {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+}
+.marquee-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  animation: marquee 10s linear infinite;
+}
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /* UTILITIES STYLE  */
 .px-4 {
   padding-left: 16px;
