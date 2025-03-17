@@ -476,6 +476,37 @@ h6 {
   }
 }
 
+.btn-prev {
+  background: none;
+  border: none;
+  color: var(--color-medium-gray);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  cursor: pointer;
+}
+.btn-prev:hover {
+  color: var(--color-black);
+  font-size: 28px;
+  letter-spacing: -1px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-next {
+  background: none;
+  border: none;
+  color: var(--color-medium-gray);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  cursor: pointer;
+}
+.btn-next:hover {
+  color: var(--color-black);
+  font-size: 28px;
+  letter-spacing: -1px;
+  transition: all 0.3s ease-in-out;
+}
+
 /* UTILITIES STYLE  */
 .px-4 {
   padding-left: 16px;
