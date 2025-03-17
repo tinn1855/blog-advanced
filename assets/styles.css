@@ -509,6 +509,10 @@ h6 {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.py-8 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .py-15 {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -531,6 +535,9 @@ h6 {
 
 .pt-32 {
   padding-top: 128px;
+}
+.pr-34 {
+  padding-right: 136px;
 }
 .my-12 {
   margin-top: 48px;
