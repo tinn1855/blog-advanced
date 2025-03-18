@@ -335,6 +335,15 @@ h6 {
   text-transform: uppercase;
 }
 
+.sub-heading-2 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 .avatar {
   width: 128px;
   height: 128px;
@@ -599,6 +608,10 @@ h6 {
   padding-left: 80px;
   padding-right: 80px;
 }
+.px-27 {
+  padding-left: 108px;
+  padding-right: 108px;
+}
 .px-28 {
   padding-left: 112px;
   padding-right: 112px;
@@ -655,6 +668,11 @@ h6 {
 .pl-27 {
   padding-left: 108px;
 }
+
+.pb-12 {
+  padding-bottom: 48px;
+}
+
 .my-12 {
   margin-top: 48px;
   margin-bottom: 48px;
