@@ -108,9 +108,6 @@ h6 {
   width: calc(2 / 3 * 100%);
 }
 
-.h-full {
-  height: 100%;
-}
 .h-80 {
   height: 320px;
 }
@@ -543,14 +540,6 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 
-.truncate-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
 /* UTILITIES STYLE  */
 .px-4 {
   padding-left: 16px;
@@ -659,9 +648,6 @@ h6 {
 
 .mb-5 {
   margin-bottom: 20px;
-}
-.mb-12 {
-  margin-bottom: 48px;
 }
 
 .text-white {
