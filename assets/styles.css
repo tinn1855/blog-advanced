@@ -95,6 +95,9 @@ h6 {
 .w-50 {
   width: 50%;
 }
+.w-55 {
+  width: 55%;
+}
 .w-60 {
   width: 60%;
 }
@@ -640,6 +643,10 @@ h6 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.py-16 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 .py-20 {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -647,6 +654,10 @@ h6 {
 .py-24 {
   padding-top: 96px;
   padding-bottom: 96px;
+}
+.py-32 {
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
 
 .p-8 {
@@ -661,6 +672,9 @@ h6 {
 
 .pt-32 {
   padding-top: 128px;
+}
+.pr-20 {
+  padding-right: 80px;
 }
 .pr-34 {
   padding-right: 136px;
@@ -797,6 +811,9 @@ h6 {
 }
 .-bottom-16 {
   bottom: -64px;
+}
+.right-45 {
+  right: 45%;
 }
 
 .z-index-1 {
