@@ -10,10 +10,13 @@
   --color-lavender: #f4f0f8;
   --color-light-yellow: #fbf6ea;
   --color-dark-yellow: #edc14a;
+
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Sen", serif;
 }
 /* BASE STYLE  */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
   margin: 0;
   color: #232536;
 }
@@ -118,8 +121,15 @@ h6 {
 .row-center {
   justify-content: center;
 }
+.row-end {
+  justify-content: end;
+}
+
 .items-center {
   align-items: center;
+}
+.items-end {
+  align-items: end;
 }
 
 .grid {
@@ -171,6 +181,13 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
   height: 720px;
+}
+.bg-about-us {
+  background-image: url("../assets/images/hero-section/banner-about-us.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 444px;
 }
 .bg-black {
   background-color: var(--color-black);
@@ -308,6 +325,14 @@ h6 {
 .heading-h5 {
   font-size: 20px;
   font-weight: 700;
+}
+.sub-heading {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .avatar {
@@ -540,10 +565,31 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 
+.introduce {
+  border-top: 24px solid var(--color-secondary);
+  position: relative;
+  width: 312px;
+}
+.introduce::before {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 24px;
+  left: 312px;
+  display: block;
+  top: -24px;
+  right: 0;
+  background-color: var(--color-primary);
+}
+
 /* UTILITIES STYLE  */
 .px-4 {
   padding-left: 16px;
   padding-right: 16px;
+}
+.px-10 {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .px-16 {
   padding-left: 64px;
@@ -596,12 +642,18 @@ h6 {
 .p-10 {
   padding: 40px;
 }
+.p-16 {
+  padding: 64px;
+}
 
 .pt-32 {
   padding-top: 128px;
 }
 .pr-34 {
   padding-right: 136px;
+}
+.pl-27 {
+  padding-left: 108px;
 }
 .my-12 {
   margin-top: 48px;
@@ -648,6 +700,10 @@ h6 {
 
 .mb-5 {
   margin-bottom: 20px;
+}
+
+.ml-27 {
+  margin-left: 108px;
 }
 
 .text-white {
@@ -702,8 +758,6 @@ h6 {
 
 .absolute {
   position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .relative {
@@ -716,4 +770,21 @@ h6 {
 
 .object-cover {
   object-fit: cover;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.right-0 {
+  right: 0;
+}
+.-bottom-16 {
+  bottom: -64px;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.grow-0 {
+  flex-grow: 0;
 }
