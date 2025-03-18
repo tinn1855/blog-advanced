@@ -22,6 +22,18 @@ span,
 address {
   color: var(--color-medium-gray);
 }
+p {
+  line-height: 28px;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+li::before {
+  content: "";
+}
 
 a {
   text-decoration: none;
@@ -89,10 +101,10 @@ h6 {
 .w-full {
   width: 100%;
 }
-.w-1-3 {
+.w-1\/3 {
   width: calc(1 / 3 * 100%);
 }
-.w-2-3 {
+.w-2\/3 {
   width: calc(2 / 3 * 100%);
 }
 
@@ -109,7 +121,9 @@ h6 {
 .grid {
   display: grid;
 }
-
+.gap-0\.5 {
+  gap: 2px;
+}
 .gap-2 {
   gap: 8px;
 }
@@ -121,6 +135,9 @@ h6 {
 }
 .gap-8 {
   gap: 32px;
+}
+.gap-12 {
+  gap: 48px;
 }
 .gap-15 {
   gap: 60px;
