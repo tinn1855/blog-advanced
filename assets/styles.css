@@ -15,6 +15,13 @@
   --font-secondary: "Sen", serif;
 }
 /* BASE STYLE  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--font-primary);
   margin: 0;
@@ -76,6 +83,9 @@ h6 {
 }
 .max-w-lg {
   max-width: 1024px;
+}
+.max-w-md {
+  max-width: 768px;
 }
 
 .icon-bars {
@@ -181,6 +191,9 @@ h6 {
 .gap-8 {
   gap: 32px;
 }
+.gap-10 {
+  gap: 40px;
+}
 .gap-12 {
   gap: 48px;
 }
@@ -268,8 +281,7 @@ h6 {
   position: relative;
   overflow: hidden;
   background-color: var(--color-primary);
-  width: 204px;
-  height: 56px;
+  padding: 16px 48px;
   cursor: pointer;
   border: none;
   font-family: "Sen";
@@ -372,6 +384,7 @@ h6 {
 .heading-h5 {
   font-size: 20px;
   font-weight: 700;
+  line-height: 32px;
 }
 .sub-heading {
   font-family: var(--font-primary);
@@ -561,6 +574,17 @@ h6 {
   color: white;
 }
 
+.input-default {
+  padding: 24px;
+  outline: none;
+  border: 1px solid var(--color-medium-gray);
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--color-black);
+  font-size: 16px;
+  line-height: 28px;
+}
+
 .newsletter-content {
   display: flex;
   gap: 64px;
@@ -711,6 +735,10 @@ h6 {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.py-12 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
 .py-15 {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -762,11 +790,20 @@ h6 {
 .pl-27 {
   padding-left: 108px;
 }
-
+.pb-8 {
+  padding-bottom: 32px;
+}
 .pb-12 {
   padding-bottom: 48px;
 }
-
+.my-3 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.my-8 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .my-12 {
   margin-top: 48px;
   margin-bottom: 48px;
@@ -846,6 +883,9 @@ h6 {
   border-width: 1px;
   border-style: solid;
 }
+.border-white {
+  border: 1px solid var(--color-white);
+}
 .-tracking-1 {
   letter-spacing: -1px;
 }
@@ -908,4 +948,11 @@ h6 {
 
 .grow-0 {
   flex-grow: 0;
+}
+
+.opacity-60 {
+  opacity: 60%;
+}
+.opacity-10 {
+  opacity: 10%;
 }
