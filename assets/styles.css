@@ -74,6 +74,9 @@ h6 {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.max-w-lg {
+  max-width: 1024px;
+}
 
 .icon-bars {
   display: none;
@@ -641,6 +644,22 @@ h6 {
   top: -24px;
   right: 0;
   background-color: var(--color-primary);
+}
+
+.decor-bar {
+  border-top: 24px solid var(--color-primary);
+  position: relative;
+  width: 75%;
+}
+
+.decor-bar::after {
+  content: "";
+  position: absolute;
+  height: 24px;
+  left: 100%;
+  top: -24px;
+  width: 35%;
+  background-color: var(--color-secondary);
 }
 
 /* UTILITIES STYLE  */
