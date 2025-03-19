@@ -667,6 +667,10 @@ h6 {
   padding-left: 16px;
   padding-right: 16px;
 }
+.px-8 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
 .px-10 {
   padding-left: 40px;
   padding-right: 40px;
