@@ -13,18 +13,31 @@
     <!-- header -->
     <header class="bg-black">
       <div class="container flex row-between items-center py-3">
-        <a href="index.html">
-          <img src="assets/images/logo.png" alt="" />
+        <a href="index.html" rel="home" aria-label="Trang chủ">
+          <img src="assets/images/logo.png" alt="logo" />
         </a>
         <div class="icon-bars">
           <i class="fa-solid fa-bars text-white"></i>
         </div>
         <div class="flex items-center gap-8 nav-links">
-          <nav class="flex gap-6">
-            <a href="index.html" class="text-white">Home</a>
-            <a href="blog.html" class="text-white">Blog</a>
-            <a href="about-us.html" class="text-white">About Us</a>
-            <a href="contact.html" class="text-white">Contact Us</a>
+          <nav class="flex gap-6" aria-label="Menu">
+            <a href="index.html" aria-current="page" class="text-white">Home</a>
+            <a href="blog.html" aria-label="Read our blog" class="text-white"
+              >Blog</a
+            >
+            <a
+              href="about-us.html"
+              aria-label="Learn more about-us"
+              class="text-white"
+              >About Us</a
+            >
+            <a
+              href="contact-us.html"
+              rel="help"
+              aria-label="Contact us"
+              class="text-white"
+              >Contact Us</a
+            >
           </nav>
           <button class="btn-secondary">
             <span>Subscribe</span>
@@ -42,7 +55,7 @@
             Step-by-step guide to choosing great font pairs
           </h1>
           <p class="m-0">
-            By <span class="text-secondary">James West</span> |
+            By <a href="author.html" class="text-secondary">James West</a> |
             <time datetime="2022-05-23">May 23, 2022</time>
           </p>
           <p>
@@ -69,7 +82,7 @@
       <div class="border"></div>
       <section class="flex flex-col gap-16 py-15">
         <article class="flex items-center gap-8">
-          <a href="#" class="w-40">
+          <a href="blog-post.html" class="w-40">
             <img
               src="assets/images/post/all-posts/thumbnail-01.png"
               alt="thumbnail post"
@@ -77,11 +90,14 @@
             />
           </a>
           <div class="w-60">
-            <p class="font-medium text-secondary uppercase tracking-3">
+            <a
+              href="category.html"
+              class="font-medium text-secondary uppercase tracking-3"
+            >
               Startup
-            </p>
+            </a>
             <div class="pr-34">
-              <a href="#">
+              <a href="blog-post.html">
                 <h3 class="heading-h2">
                   Design tips for designers that cover everything you need
                 </h3>
@@ -95,7 +111,7 @@
           </div>
         </article>
         <article class="flex items-center gap-8">
-          <a href="#" class="w-40">
+          <a href="blog-post.html" class="w-40">
             <img
               src="assets/images/post/all-posts/thumbnail-02.png"
               alt="thumbnail post"
@@ -103,11 +119,14 @@
             />
           </a>
           <div class="w-60">
-            <p class="font-medium text-secondary uppercase tracking-3">
+            <a
+              href="category.html"
+              class="font-medium text-secondary uppercase tracking-3"
+            >
               Business
-            </p>
+            </a>
             <div class="pr-34">
-              <a href="#">
+              <a href="blog-post.html">
                 <h3 class="heading-h2">
                   How to build rapport with your web design clients
                 </h3>
@@ -121,7 +140,7 @@
           </div>
         </article>
         <article class="flex items-center gap-8">
-          <a href="#" class="w-40">
+          <a href="blog-post.html" class="w-40">
             <img
               src="assets/images/post/all-posts/thumbnail-03.png"
               alt="thumbnail post"
@@ -129,11 +148,14 @@
             />
           </a>
           <div class="w-60">
-            <p class="font-medium text-secondary uppercase tracking-3">
+            <a
+              href="category.html"
+              class="font-medium text-secondary uppercase tracking-3"
+            >
               Startup
-            </p>
+            </a>
             <div class="pr-34">
-              <a href="#">
+              <a href="blog-post.html">
                 <h3 class="heading-h2">Logo design trends to avoid in 2022</h3>
               </a>
               <p>
@@ -145,7 +167,7 @@
           </div>
         </article>
         <article class="flex items-center gap-8">
-          <a href="#" class="w-40">
+          <a href="blog-post.html" class="w-40">
             <img
               src="assets/images/post/all-posts/thumbnail-04.png"
               alt="thumbnail post"
@@ -153,11 +175,14 @@
             />
           </a>
           <div class="w-60">
-            <p class="font-medium text-secondary uppercase tracking-3">
+            <a
+              href="category.html"
+              class="font-medium text-secondary uppercase tracking-3"
+            >
               Technology
-            </p>
+            </a>
             <div class="pr-34">
-              <a href="#">
+              <a href="blog-post.html">
                 <h3 class="heading-h2">
                   8 Figma design systems you can download for free today
                 </h3>
@@ -171,7 +196,7 @@
           </div>
         </article>
         <article class="flex items-center gap-8">
-          <a href="#" class="w-40">
+          <a href="blog-post.html" class="w-40">
             <img
               src="assets/images/post/all-posts/thumbnail-01.png"
               alt="thumbnail post"
@@ -179,11 +204,14 @@
             />
           </a>
           <div class="w-60">
-            <p class="font-medium text-secondary uppercase tracking-3">
+            <a
+              href="category.html"
+              class="font-medium text-secondary uppercase tracking-3"
+            >
               Economy
-            </p>
+            </a>
             <div class="pr-34">
-              <a href="#">
+              <a href="blog-post.html">
                 <h3 class="heading-h2">
                   Font sizes in UI design: The complete guide to follow
                 </h3>
@@ -197,98 +225,129 @@
           </div>
         </article>
         <div class="flex row-center gap-4">
-          <button class="btn-prev">< Prev</a>
-          <button class="btn-next">Next ></button>
+          <a class="btn-prev">&lt; Prev</a>
+          <a class="btn-next">Next &gt;</a>
         </div>
       </section>
     </div>
     <!-- end post  -->
     <!-- all category  -->
     <section class="container">
-        <h2 class="heading-h2">All Category</h2>
-        <div class="list-category">
-          <div class="item-category">
-            <a href="#">
-              <div class="">
-                <img
-                  src="assets/images/category/business.png"
-                  alt=""
-                  class="icon"
-                  width="24px"
-                />
-              </div>
-              <h3 class="heading-h3">Business</h3>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
-          <div class="item-category">
-            <a href="#">
-              <div>
-                <img
-                  src="assets/images/category/startup.png"
-                  alt="icon"
-                  class="icon"
-                />
-              </div>
-              <h3 class="heading-h3">Startup</h3>
+      <h2 class="heading-h2">All Category</h2>
+      <div class="list-category">
+        <div class="item-category">
+          <a href="category.html">
+            <div class="">
+              <img
+                src="assets/images/category/business.png"
+                alt=""
+                class="icon"
+                width="24px"
+              />
+            </div>
+            <h3 class="heading-h3">Business</h3>
+            <div>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-            </a>
-          </div>
-          <div class="item-category">
-            <a href="#">
-              <div>
-                <img
-                  src="assets/images/category/economy.png"
-                  alt="icon"
-                  class="icon"
-                />
-              </div>
-              <h3 class="heading-h3">Economy</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-            </a>
-          </div>
-          <div class="item-category">
-            <a href="#">
-              <div>
-                <img
-                  src="assets/images/category/technology.png"
-                  alt="icon"
-                  class="icon"
-                />
-              </div>
-              <h3 class="heading-h3">Technology</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
+        <div class="item-category">
+          <a href="category.html">
+            <div>
+              <img
+                src="assets/images/category/startup.png"
+                alt="icon"
+                class="icon"
+              />
+            </div>
+            <h3 class="heading-h3">Startup</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          </a>
+        </div>
+        <div class="item-category">
+          <a href="category.html">
+            <div>
+              <img
+                src="assets/images/category/economy.png"
+                alt="icon"
+                class="icon"
+              />
+            </div>
+            <h3 class="heading-h3">Economy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          </a>
+        </div>
+        <div class="item-category">
+          <a href="category.html">
+            <div>
+              <img
+                src="assets/images/category/technology.png"
+                alt="icon"
+                class="icon"
+              />
+            </div>
+            <h3 class="heading-h3">Technology</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          </a>
+        </div>
+      </div>
     </section>
-     <!-- end all category  -->
-      <!-- join our team  -->
+    <!-- end all category  -->
+    <!-- join our team  -->
     <section class="container join-our-team my-32">
-        <h2 class="heading-h2 -tracking-2">Join our team to be a part of our story</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt.
-        </p>
-        <button class="btn-primary mt-4"><span>Join Now</span></button>
+      <h2 class="heading-h2 -tracking-2">
+        Join our team to be a part of our story
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt.
+      </p>
+      <button class="btn-primary mt-4"><span>Join Now</span></button>
     </section>
-       <!-- end join our team  -->
+    <!-- end join our team  -->
     <!-- end hero section  -->
     <!-- footer  -->
     <footer class="bg-black py-15 mt-12">
       <div class="container">
         <div class="footer-top">
-          <a href="index.html">
-            <img src="assets/images/logo.png" alt="" />
+          <a href="index.html" rel="home" aria-label="Go to home">
+            <img src="assets/images/logo.png" alt="logo" />
           </a>
           <nav class="nav-footer">
-            <a href="index.html" rel="home" class="text-white">Home</a>
-            <a href="blog.html" rel="" class="text-white">Blog</a>
-            <a href="about-us.html" rel="" class="text-white">About Us</a>
-            <a href="contact.html" rel="" class="text-white">Contact Us</a>
-            <a href="privacy-policy.html" rel="privacy-policy" class="text-white">Privacy Policy</a>
+            <a
+              href="index.html"
+              rel="home"
+              aria-current="page"
+              class="text-white"
+              >Home</a
+            >
+            <a
+              href="blog.html"
+              rel="bookmark"
+              aria-label="Read our blog"
+              class="text-white"
+              >Blog</a
+            >
+            <a
+              href="about-us.html"
+              aria-label="Learn more about us"
+              class="text-white"
+              >About Us</a
+            >
+            <a
+              href="contact-us.html"
+              rel="help"
+              aria-label="Contact us"
+              class="text-white"
+              >Contact Us</a
+            >
+            <a
+              href="privacy-policy.html"
+              rel="privacy-policy"
+              aria-label="View privacy policy"
+              class="text-white"
+              >Privacy Policy</a
+            >
           </nav>
         </div>
         <div class="bg-white-5">
@@ -306,7 +365,11 @@
                   class="email-input"
                 />
               </div>
-              <button class="btn-primary"><span>Subscribe</span></button>
+              <div>
+                <button class="btn-primary">
+                  <span>Subscribe</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -314,8 +377,8 @@
           <div class="">
             <address>Finstreet 118 2561 Fintown</address>
             <div>
-              <span>Hello@finsweet.com</span>
-              <span>020 7993 2905</span>
+              <a href="mailto:Hello@finsweet.com">Hello@finsweet.com</a>
+              <a href="tel:+02079932905">020 7993 2905</a>
             </div>
           </div>
           <div class="flex gap-6 row-center text-medium-gray">

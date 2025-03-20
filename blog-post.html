@@ -10,21 +10,34 @@
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
   </head>
   <body>
-    <!-- header  -->
+    <!-- header -->
     <header class="bg-black">
       <div class="container flex row-between items-center py-3">
-        <a href="index.html">
-          <img src="assets/images/logo.png" alt="" />
+        <a href="index.html" rel="home" aria-label="Trang chủ">
+          <img src="assets/images/logo.png" alt="logo" />
         </a>
         <div class="icon-bars">
           <i class="fa-solid fa-bars text-white"></i>
         </div>
         <div class="flex items-center gap-8 nav-links">
-          <nav class="flex gap-6">
-            <a href="index.html" class="text-white">Home</a>
-            <a href="blog.html" class="text-white">Blog</a>
-            <a href="about-us.html" class="text-white">About Us</a>
-            <a href="contact.html" class="text-white">Contact Us</a>
+          <nav class="flex gap-6" aria-label="Menu">
+            <a href="index.html" aria-current="page" class="text-white">Home</a>
+            <a href="blog.html" aria-label="Read our blog" class="text-white"
+              >Blog</a
+            >
+            <a
+              href="about-us.html"
+              aria-label="Learn more about-us"
+              class="text-white"
+              >About Us</a
+            >
+            <a
+              href="contact-us.html"
+              rel="help"
+              aria-label="Contact us"
+              class="text-white"
+              >Contact Us</a
+            >
           </nav>
           <button class="btn-secondary">
             <span>Subscribe</span>
@@ -32,23 +45,28 @@
         </div>
       </div>
     </header>
-    <!-- end header  -->
+    <!-- end header -->
     <div class="w-40 container row-center mt-32">
       <section class="flex flex-col gap-6">
         <div class="flex gap-4 items-center">
           <div class="avatar-reader">
-            <img
-              src="assets/images/feedback/reader-01.png"
-              alt="avatar"
-              class="avatar-reader"
-            />
+            <a href="author.html">
+              <img
+                src="assets/images/feedback/reader-01.png"
+                alt="avatar"
+                class="avatar-reader"
+              />
+            </a>
           </div>
           <div>
-            <a href="#" rel="author" class="heading-h3 text-secondary"
+            <a
+              href="about-us.html"
+              rel="author"
+              class="heading-h3 text-secondary"
               >Andrew Jonson</a
             >
             <p class="m-0">
-              Posted on <time datetime=""> 27th January 2022</time>
+              Posted on <time datetime="2022-01-27"> 27th January 2022</time>
             </p>
           </div>
         </div>
@@ -58,8 +76,56 @@
           </h1>
         </div>
         <div class="flex gap-2 mt-2">
-          <img src="assets/images/category/startup.png" alt="icon" />
-          <h2 class="heading-h4">Startup</h2>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_571_853)">
+              <path
+                d="M14.9498 9.05108C15.7723 9.8735 17.1105 9.87355 17.933 9.05108C18.3314 8.65264 18.5508 8.12295 18.5508 7.55952C18.5508 6.99608 18.3314 6.46639 17.933 6.068C17.5218 5.65677 16.9816 5.45117 16.4414 5.45117C15.9013 5.45117 15.3611 5.65677 14.9499 6.068C14.5515 6.46639 14.332 6.99608 14.332 7.55952C14.332 8.12295 14.5515 8.65269 14.9498 9.05108Z"
+                fill="#232536"
+              />
+              <path
+                d="M6.10492 6.48096L4.02565 6.6416C3.44708 6.68631 2.93179 6.98955 2.61182 7.47353L0.213854 11.1003C-0.0288162 11.4673 -0.067394 11.9267 0.110589 12.329C0.288619 12.7314 0.654475 13.0118 1.08924 13.0792L2.99305 13.374C3.43841 11.0106 4.50452 8.65299 6.10492 6.48096Z"
+                fill="#FFD050"
+              />
+              <path
+                d="M10.625 21.0059L10.9199 22.9097C10.9872 23.3445 11.2677 23.7103 11.67 23.8883C11.8374 23.9624 12.0146 23.9989 12.1908 23.9989C12.4385 23.9989 12.6844 23.9268 12.8987 23.7851L16.5256 21.3871C17.0096 21.0671 17.3128 20.5518 17.3575 19.9733L17.5181 17.894C15.346 19.4945 12.9885 20.5606 10.625 21.0059Z"
+                fill="#FFD050"
+              />
+              <path
+                d="M9.90948 19.6869C9.97557 19.6869 10.042 19.6815 10.1084 19.6704C11.0985 19.5049 12.0529 19.226 12.9633 18.8609L5.13853 11.0361C4.77347 11.9465 4.49456 12.9009 4.329 13.8911C4.26375 14.2814 4.39467 14.679 4.67447 14.9589L9.04056 19.325C9.27287 19.5572 9.58642 19.6869 9.90948 19.6869Z"
+                fill="#FFD050"
+              />
+              <path
+                d="M22.0865 10.6407C24.0013 6.93881 24.0722 3.02684 23.9721 1.19216C23.9379 0.563527 23.4367 0.0623433 22.808 0.0280779C22.5093 0.0117655 22.1552 0 21.7562 0C19.7047 0 16.4586 0.310732 13.3595 1.9137C10.8966 3.18762 7.66708 5.99264 5.76172 9.67896C5.78422 9.69653 5.8062 9.71519 5.82692 9.73591L14.2644 18.1733C14.2851 18.1941 14.3037 18.216 14.3213 18.2385C18.0076 16.3331 20.8126 13.1036 22.0865 10.6407ZM13.9547 5.07371C15.3254 3.70305 17.5557 3.70291 18.9265 5.07371C19.5905 5.73769 19.9562 6.62057 19.9562 7.55961C19.9562 8.49865 19.5905 9.38154 18.9265 10.0455C18.2412 10.7308 17.3407 11.0735 16.4406 11.0736C15.5402 11.0736 14.6402 10.731 13.9547 10.0455C13.2907 9.38154 12.925 8.49865 12.925 7.55961C12.925 6.62057 13.2907 5.73769 13.9547 5.07371Z"
+                fill="#232536"
+              />
+              <path
+                d="M0.716821 19.7781C0.896774 19.7781 1.07673 19.7094 1.21398 19.5721L3.50959 17.2765C3.78418 17.0019 3.78418 16.5567 3.50959 16.2821C3.23504 16.0075 2.78982 16.0075 2.51523 16.2821L0.219617 18.5777C-0.0549766 18.8523 -0.0549766 19.2975 0.219617 19.5721C0.356914 19.7094 0.536867 19.7781 0.716821 19.7781Z"
+                fill="#FFD050"
+              />
+              <path
+                d="M5.61382 18.3854C5.33927 18.1108 4.89405 18.1108 4.61946 18.3854L0.205945 22.7989C-0.0686484 23.0735 -0.0686484 23.5187 0.205945 23.7933C0.343242 23.9306 0.523195 23.9992 0.703148 23.9992C0.883102 23.9992 1.06305 23.9306 1.2003 23.7932L5.61377 19.3797C5.88841 19.1052 5.88841 18.66 5.61382 18.3854Z"
+                fill="#FFD050"
+              />
+              <path
+                d="M6.72221 20.4906L4.42665 22.7862C4.15205 23.0608 4.15205 23.506 4.42665 23.7806C4.56395 23.9179 4.7439 23.9865 4.9238 23.9865C5.10371 23.9865 5.28371 23.9179 5.42096 23.7806L7.71657 21.485C7.99116 21.2104 7.99116 20.7652 7.71657 20.4906C7.44202 20.216 6.9968 20.216 6.72221 20.4906Z"
+                fill="#FFD050"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_571_853">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <a href="category.html">
+            <h4 class="heading-h4">Startup</h4>
+          </a>
         </div>
       </section>
     </div>
@@ -147,7 +213,7 @@
       <h2 class="heading-h2">What to read next</h2>
       <div class="grid grid-cols-3 gap-8 my-16">
         <section class="grid-row">
-          <a href="#">
+          <a href="blog-post.html">
             <img
               src="assets/images/post/all-posts/thumbnail-01.png"
               alt="thumbnail post"
@@ -155,10 +221,10 @@
             />
           </a>
           <p class="mt-8">
-            By <span class="text-secondary">John Doe</span> |
-            <time datetime="">Aug 23, 2021</time>
+            By <a href="author.html" class="text-secondary">John Doe</a> |
+            <time datetime="2021-08-23">Aug 23, 2021</time>
           </p>
-          <a href="#" rel="bookmark">
+          <a href="blog-post.html" rel="bookmark">
             <h3 class="heading-h3 -tracking-1">
               A UX Case Study Creating a Studious Environment for Students:
             </h3>
@@ -170,7 +236,7 @@
           </p>
         </section>
         <section class="grid-row">
-          <a href="#">
+          <a href="blog-post.html">
             <img
               src="assets/images/post/all-posts/thumbnail-02.png"
               alt="thumbnail post"
@@ -178,10 +244,10 @@
             />
           </a>
           <p class="mt-8">
-            By <span class="text-secondary">John Doe</span> |
-            <time datetime="">Aug 23, 2021</time>
+            By <a href="author.html" class="text-secondary">John Doe</a> |
+            <time datetime="2021-08-23">Aug 23, 2021</time>
           </p>
-          <a href="#" rel="bookmark">
+          <a href="blog-post.html" rel="bookmark">
             <h3 class="heading-h3 -tracking-1">
               A UX Case Study Creating a Studious
             </h3>
@@ -193,7 +259,7 @@
           </p>
         </section>
         <section class="grid-row">
-          <a href="#">
+          <a href="blog-post.html">
             <img
               src="assets/images/post/all-posts/thumbnail-03.png"
               alt="thumbnail post"
@@ -201,10 +267,10 @@
             />
           </a>
           <p class="mt-8">
-            By <span class="text-secondary">John Doe</span> |
-            <time datetime="">Aug 23, 2021</time>
+            By <a href="author.html" class="text-secondary">John Doe</a> |
+            <time datetime="2021-08-23">Aug 23, 2021</time>
           </p>
-          <a href="#" rel="bookmark">
+          <a href="blog-post.html" rel="bookmark">
             <h3 class="heading-h3 -tracking-1">
               A UX Case Study Creating a Studious Environment for Students:
             </h3>
@@ -235,21 +301,44 @@
     <footer class="bg-black py-15 mt-12">
       <div class="container">
         <div class="footer-top">
-          <a href="index.html">
-            <img src="assets/images/logo.png" alt="" />
+          <a href="index.html" rel="home" aria-label="Go to home">
+            <img src="assets/images/logo.png" alt="logo" />
           </a>
           <nav class="nav-footer">
-            <a href="index.html" rel="home" class="text-white">Home</a>
-            <a href="blog.html" rel="" class="text-white">Blog</a>
-            <a href="about-us.html" rel="" class="text-white">About Us</a>
-            <a href="contact.html" rel="" class="text-white">Contact Us</a>
+            <a
+              href="index.html"
+              rel="home"
+              aria-current="page"
+              class="text-white"
+              >Home</a
+            >
+            <a
+              href="blog.html"
+              rel="bookmark"
+              aria-label="Read our blog"
+              class="text-white"
+              >Blog</a
+            >
+            <a
+              href="about-us.html"
+              aria-label="Learn more about us"
+              class="text-white"
+              >About Us</a
+            >
+            <a
+              href="contact-us.html"
+              rel="help"
+              aria-label="Contact us"
+              class="text-white"
+              >Contact Us</a
+            >
             <a
               href="privacy-policy.html"
               rel="privacy-policy"
+              aria-label="View privacy policy"
               class="text-white"
+              >Privacy Policy</a
             >
-              Privacy Policy
-            </a>
           </nav>
         </div>
         <div class="bg-white-5">
@@ -267,7 +356,11 @@
                   class="email-input"
                 />
               </div>
-              <button class="btn-primary"><span>Subscribe</span></button>
+              <div>
+                <button class="btn-primary">
+                  <span>Subscribe</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -275,8 +368,8 @@
           <div class="">
             <address>Finstreet 118 2561 Fintown</address>
             <div>
-              <span>Hello@finsweet.com</span>
-              <span>020 7993 2905</span>
+              <a href="mailto:Hello@finsweet.com">Hello@finsweet.com</a>
+              <a href="tel:+02079932905">020 7993 2905</a>
             </div>
           </div>
           <div class="flex gap-6 row-center text-medium-gray">

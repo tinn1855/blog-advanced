@@ -13,18 +13,31 @@
     <!-- header -->
     <header class="bg-black">
       <div class="container flex row-between items-center py-3">
-        <a href="index.html">
-          <img src="assets/images/logo.png" alt="" />
+        <a href="index.html" rel="home" aria-label="Trang chủ">
+          <img src="assets/images/logo.png" alt="logo" />
         </a>
         <div class="icon-bars">
           <i class="fa-solid fa-bars text-white"></i>
         </div>
         <div class="flex items-center gap-8 nav-links">
-          <nav class="flex gap-6">
-            <a href="index.html" class="text-white">Home</a>
-            <a href="blog.html" class="text-white">Blog</a>
-            <a href="about-us.html" class="text-white">About Us</a>
-            <a href="contact.html" class="text-white">Contact Us</a>
+          <nav class="flex gap-6" aria-label="Menu">
+            <a href="index.html" aria-current="page" class="text-white">Home</a>
+            <a href="blog.html" aria-label="Read our blog" class="text-white"
+              >Blog</a
+            >
+            <a
+              href="about-us.html"
+              aria-label="Learn more about-us"
+              class="text-white"
+              >About Us</a
+            >
+            <a
+              href="contact-us.html"
+              rel="help"
+              aria-label="Contact us"
+              class="text-white"
+              >Contact Us</a
+            >
           </nav>
           <button class="btn-secondary">
             <span>Subscribe</span>
@@ -65,8 +78,9 @@
               <a
                 href="mailto:hello@finsweet.com"
                 class="text-white opacity-60 m-0"
-                >hello@finsweet.com</a
               >
+                hello@finsweet.com
+              </a>
             </div>
           </div>
         </div>
@@ -88,17 +102,41 @@
     <footer class="bg-black py-15 mt-12">
       <div class="container">
         <div class="footer-top">
-          <a href="index.html">
-            <img src="assets/images/logo.png" alt="" />
+          <a href="index.html" rel="home" aria-label="Go to home">
+            <img src="assets/images/logo.png" alt="logo" />
           </a>
           <nav class="nav-footer">
-            <a href="index.html" rel="home" class="text-white">Home</a>
-            <a href="blog.html" rel="" class="text-white">Blog</a>
-            <a href="about-us.html" rel="" class="text-white">About Us</a>
-            <a href="contact.html" rel="" class="text-white">Contact Us</a>
+            <a
+              href="index.html"
+              rel="home"
+              aria-current="page"
+              class="text-white"
+              >Home</a
+            >
+            <a
+              href="blog.html"
+              rel="bookmark"
+              aria-label="Read our blog"
+              class="text-white"
+              >Blog</a
+            >
+            <a
+              href="about-us.html"
+              aria-label="Learn more about us"
+              class="text-white"
+              >About Us</a
+            >
+            <a
+              href="contact-us.html"
+              rel="help"
+              aria-label="Contact us"
+              class="text-white"
+              >Contact Us</a
+            >
             <a
               href="privacy-policy.html"
               rel="privacy-policy"
+              aria-label="View privacy policy"
               class="text-white"
               >Privacy Policy</a
             >
@@ -120,7 +158,9 @@
                 />
               </div>
               <div>
-                <button class="btn-primary"><span>Subscribe</span></button>
+                <button class="btn-primary">
+                  <span>Subscribe</span>
+                </button>
               </div>
             </div>
           </div>
