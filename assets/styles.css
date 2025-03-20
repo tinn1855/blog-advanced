@@ -823,6 +823,10 @@ h6 {
   margin: 0;
 }
 
+.mt-1 {
+  margin-top: 1px;
+}
+
 .mt-2 {
   margin-top: 8px;
 }
