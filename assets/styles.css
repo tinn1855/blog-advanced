@@ -119,6 +119,9 @@ h6 {
 .w-75 {
   width: 75%;
 }
+.w-80 {
+  width: 80%;
+}
 .w-90 {
   width: 90%;
 }
@@ -503,6 +506,11 @@ h6 {
   padding: 12px;
   border-radius: 20%;
   background-color: var(--color-light-yellow);
+  box-sizing: content-box;
+}
+.icon-social:hover {
+  color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
 }
 .item-category {
   padding: 32px;
@@ -600,15 +608,15 @@ h6 {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  width: 80%;
 }
 .marquee-content {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
   animation: marquee 10s linear infinite;
 }
+
 .marquee:hover .marquee-content {
   animation-play-state: paused;
 }
@@ -617,7 +625,7 @@ h6 {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
