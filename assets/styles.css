@@ -354,11 +354,12 @@ h6 {
   border-radius: 100%;
   border-style: none;
   cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 .btn-arrow:hover {
   background-color: var(--color-black);
-  padding: 24px 26px;
   color: var(--color-light-gray);
+  transform: scale(1.2);
 }
 
 .heading-display {
@@ -490,7 +491,7 @@ h6 {
 }
 .our-story-content {
   background-color: white;
-  width: 45%;
+  width: 55%;
   padding-top: 96px;
   padding-bottom: 96px;
   padding-left: 80px;
@@ -576,7 +577,6 @@ h6 {
   border: 1px solid var(--color-dark-gray);
   font-size: 16px;
   outline: none;
-  width: 250px;
   background: transparent;
   color: white;
 }
@@ -595,7 +595,7 @@ h6 {
 .newsletter-content {
   display: flex;
   gap: 64px;
-  padding: 96px 80px;
+  padding: 80px 64px;
   margin: 48px 0px;
 }
 
@@ -649,8 +649,7 @@ h6 {
 .btn-prev:hover {
   color: var(--color-black);
   font-size: 28px;
-  letter-spacing: -1px;
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
 }
 .btn-next {
   background: none;

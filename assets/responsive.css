@@ -13,7 +13,7 @@
     display: block;
   }
 
-  .w-full {
+  .md-w-full {
     width: 100%;
   }
 
@@ -67,15 +67,19 @@
     gap: 64px;
     padding: 80px 96px;
   }
+  .our-story-content {
+    position: static;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .our-story img {
+    width: 100%;
+  }
 
   /* UTILITES  */
   .my-12 {
     margin-top: 48px;
     margin-bottom: 48px;
-  }
-  .py-3 {
-    padding-top: 12px;
-    padding-bottom: 12px;
   }
   .pt-20 {
     padding-top: 80px;
@@ -89,14 +93,14 @@
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   /* LAYOUT  */
-  .w-full {
+  .sm-w-full {
     width: 100%;
   }
-  .w-50 {
+  .sm-w-50 {
     width: 100%;
   }
 
@@ -222,11 +226,15 @@
   }
 
   /* UTILITES  */
-  .py-3 {
+  .sm-py-3 {
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  .pt-16 {
+  .sm-py-5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .sm-pt-16 {
     padding-top: 64px;
   }
   .hidden {
