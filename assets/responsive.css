@@ -12,6 +12,9 @@
   .icon-bars {
     display: block;
   }
+  .md-block {
+    display: block;
+  }
 
   .md-w-full {
     width: 100%;
@@ -77,6 +80,10 @@
   }
 
   /* UTILITES  */
+  .md-py-5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .my-12 {
     margin-top: 48px;
     margin-bottom: 48px;
@@ -84,6 +91,12 @@
   .pt-20 {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+  .md-pr-0 {
+    padding-right: 0px;
+  }
+  .md-mt-5 {
+    margin-top: 20px;
   }
 }
 
@@ -234,9 +247,18 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .sm-py-12 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .sm-pt-16 {
     padding-top: 64px;
   }
+  .sm-my-10 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
   .hidden {
     display: none;
   }
