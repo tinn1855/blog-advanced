@@ -79,8 +79,15 @@
   }
   .feedback {
     display: flex;
-    padding: 40px 48px;
-    column-gap: 60px;
+    flex-direction: column;
+    padding: 40px 10px;
+    gap: 20px;
+  }
+  .feedback-left {
+    width: 100%;
+  }
+  .feedback-right {
+    width: 100%;
   }
   .newsletter-content {
     display: block;
@@ -244,9 +251,7 @@
   .feedback-right {
     width: 100%;
   }
-  .join-our-team {
-    width: 90%;
-  }
+
   .footer-top {
     display: flex;
     flex-direction: column;
