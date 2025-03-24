@@ -15,9 +15,23 @@
   .md-block {
     display: block;
   }
+  .md-flex {
+    display: flex;
+  }
+  .md-row-center {
+    justify-content: center;
+  }
 
   .md-w-full {
     width: 100%;
+  }
+
+  .md-w-50 {
+    width: 50%;
+  }
+  /* TYPOGRAPHY   */
+  .md-text-center {
+    text-align: center;
   }
 
   /* COMPONENTS  */
@@ -84,6 +98,11 @@
     margin-top: 40px;
     margin-bottom: 40px;
   }
+
+  .md-px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .md-py-3 {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -91,6 +110,10 @@
   .md-py-5 {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .md-py-20 {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .my-12 {
     margin-top: 48px;
