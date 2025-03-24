@@ -12,7 +12,7 @@
   <body>
     <!-- header -->
     <header class="bg-black">
-      <div class="container flex row-between items-center py-3">
+      <div class="container flex row-between items-center sm-py-3 md-py-3 py-3">
         <a href="index.html" rel="home" aria-label="Trang chủ">
           <img src="assets/images/logo.png" alt="logo" />
         </a>
@@ -48,14 +48,22 @@
     <!-- end header -->
     <!-- about us  -->
     <div class="container mt-4">
-      <div class="flex items-center ml-27 relative -bottom-16 z-index-1">
-        <section class="bg-white w-50 p-16">
+      <div
+        class="flex md-block items-center md-ml-0 ml-27 relative md-bottom-0 -bottom-16 z-index-1"
+      >
+        <section class="bg-white w-50 md-w-full md-px-0 p-16">
           <p class="sub-heading">About us</p>
           <h1 class="heading-h1 -tracking-2">
             We are a team of content writers who share their learnings
           </h1>
+          <p class="hidden md-block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
         </section>
-        <section class="w-50 p-8">
+        <section class="w-50 md-hidden p-8">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -65,8 +73,10 @@
         </section>
       </div>
       <div class="bg-about-us flex-col row-end">
-        <div class="ml-27 flex">
-          <div class="w-50 flex bg-primary grow-0 row-between py-8 px-10">
+        <div class="ml-27 md-ml-0 flex">
+          <div
+            class="w-50 md-w-full flex bg-primary grow-0 row-between py-8 px-10 md-px-3 md-py-5"
+          >
             <section>
               <h2 class="heading-display">12+</h2>
               <p class="m-0 text-black">Blogs Published</p>
@@ -80,16 +90,15 @@
               <p class="m-0 text-black">Total Active Users</p>
             </section>
           </div>
-          <div class="w-50"></div>
         </div>
-        <div class="introduce ml-27"></div>
+        <div class="introduce ml-27 md-ml-0 md-hidden"></div>
       </div>
     </div>
     <!-- end about us  -->
     <!-- our mission  -->
     <div class="container bg-lavender">
-      <div class="flex px-27 gap-8 pt-32 pb-12">
-        <div class="w-50">
+      <div class="flex md-block px-27 sm-px-5 gap-8 pt-32 pb-12">
+        <div class="w-50 md-w-full">
           <h4 class="sub-heading-2">OUR MISSION</h4>
           <h2 class="heading-h3 mt-6">
             Creating valuable content for creatives all around the world
@@ -101,7 +110,7 @@
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div class="w-50">
+        <div class="w-50 md-w-full">
           <h4 class="sub-heading-2">OUR VISION</h4>
           <h2 class="heading-h3 mt-6">
             A platform that empowers individuals to improve
@@ -117,14 +126,27 @@
     </div>
     <!-- end our mission  -->
     <!-- our team of creatives  -->
-    <div class="flex gap-20 items-center container py-32">
-      <section class="w-45">
-        <h2 class="heading-h2">Our team of creatives</h2>
-        <h4 class="heading-h4 mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt.
-        </h4>
-        <p>
+    <div class="flex md-block gap-20 items-center container py-32">
+      <section class="w-45 md-w-full flex-col gap-4 md-my-10">
+        <div class="hidden md-block">
+          <img
+            src="assets/images/about-us/thumbnail.png"
+            alt="thumbnail"
+            class="w-full"
+          />
+        </div>
+        <div>
+          <a href="#" class="heading-h2 md-py-5 text-black">
+            Our team of creatives
+          </a>
+        </div>
+        <div>
+          <a href="#" class="heading-h4 text-black mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </a>
+        </div>
+        <p class="m-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -132,7 +154,7 @@
           reprehenderit in voluptate velit esse cillum dolore eu fugiat.
         </p>
       </section>
-      <section class="w-55">
+      <section class="w-55 md-hidden">
         <img
           src="assets/images/about-us/thumbnail.png"
           alt="thumbnail"
@@ -142,21 +164,27 @@
     </div>
     <!-- end our team of creatives  -->
     <!-- why we started  -->
-    <div class="container flex items-center gap-16">
-      <section class="w-55">
+    <div class="container flex md-block items-center gap-16">
+      <section class="w-55 md-w-full">
         <img
           src="assets/images/about-us/thumbnail-2.png"
           alt="thumbnail"
           class="w-full"
         />
       </section>
-      <section class="w-45 pr-18">
-        <h2 class="heading-h2 -tracking-2">Why we started this Blog</h2>
-        <h4 class="heading-h4 mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt.
-        </h4>
-        <p>
+      <section class="w-45 md-w-full md-pr-0 pr-18 flex-col gap-4">
+        <div>
+          <a href="#" class="heading-h2 -tracking-2 md-py-5 text-black">
+            Why we started this Blog
+          </a>
+        </div>
+        <div>
+          <a href="#" class="heading-h4 mt-4 text-black">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </a>
+        </div>
+        <p class="m-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -168,9 +196,9 @@
     <!-- end why we started  -->
 
     <!-- list of author  -->
-    <div class="container mt-24">
+    <div class="container mt-24 md-mt-10">
       <h2 class="heading-h2 text-center">List Of Author</h2>
-      <div class="grid grid-cols-4 gap-8 mt-12">
+      <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-8 mt-12">
         <section class="item-author">
           <div>
             <img
@@ -408,7 +436,7 @@
     <!-- end list of author  -->
 
     <!-- join our team -->
-    <section class="container join-our-team my-32">
+    <section class="container w-25 md-w-full text-center md-my-10 my-32">
       <h2 class="heading-h2">Join our team to be a part of our story</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -465,17 +493,17 @@
         </div>
         <div class="bg-white-5">
           <div class="newsletter-content">
-            <div>
+            <div class="w-50 md-w-full">
               <h2 class="heading-h2 text-white -tracking-2">
                 Subscribe to our news letter to get latest updates and news
               </h2>
             </div>
-            <div class="newsletter-form">
-              <div class="">
+            <div class="newsletter-form w-50 md-w-full">
+              <div class="w-full">
                 <input
                   type="email"
                   placeholder="Enter Your Email"
-                  class="email-input"
+                  class="email-input w-full"
                 />
               </div>
               <div>
@@ -496,16 +524,18 @@
           </div>
           <div class="flex gap-6 row-center text-medium-gray">
             <a href="#" rel="icon">
-              <i class="fa-brands fa-facebook text-medium-gray"></i>
+              <i class="fa-brands fa-facebook text-medium-gray icon-social"></i>
             </a>
             <a href="#" rel="icon">
-              <i class="fa-brands fa-twitter text-medium-gray"></i>
+              <i class="fa-brands fa-twitter text-medium-gray icon-social"></i>
             </a>
             <a href="#" rel="icon">
-              <i class="fa-brands fa-instagram text-medium-gray"></i>
+              <i
+                class="fa-brands fa-instagram text-medium-gray icon-social"
+              ></i>
             </a>
             <a href="#" rel="icon">
-              <i class="fa-brands fa-linkedin text-medium-gray"></i>
+              <i class="fa-brands fa-linkedin text-medium-gray icon-social"></i>
             </a>
           </div>
         </div>

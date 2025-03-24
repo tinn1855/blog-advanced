@@ -665,12 +665,12 @@ h6 {
 .introduce {
   border-top: 24px solid var(--color-secondary);
   position: relative;
-  width: 312px;
+  width: 30%;
 }
 .introduce::before {
   content: "";
   position: absolute;
-  width: 550px;
+  width: 130%;
   height: 24px;
   left: 312px;
   display: block;
@@ -978,4 +978,8 @@ h6 {
 }
 .opacity-10 {
   opacity: 10%;
+}
+
+.hidden {
+  display: none;
 }
