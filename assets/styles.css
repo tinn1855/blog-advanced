@@ -608,13 +608,21 @@ h6 {
   display: inline-block;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
 .marquee-content {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-  animation: marquee 10s linear infinite;
+  width: max-content;
+  animation: marquee 5s linear infinite;
+}
+
+.marquee-content::after {
+  content: "";
+  display: flex;
+  gap: 32px;
 }
 
 .marquee:hover .marquee-content {
@@ -622,7 +630,7 @@ h6 {
 }
 @keyframes marquee {
   from {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   to {
     transform: translateX(-50%);
