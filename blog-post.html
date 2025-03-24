@@ -12,7 +12,7 @@
   <body>
     <!-- header -->
     <header class="bg-black">
-      <div class="container flex row-between items-center py-3">
+      <div class="container flex row-between items-center sm-py-3 md-py-3 py-3">
         <a href="index.html" rel="home" aria-label="Trang chủ">
           <img src="assets/images/logo.png" alt="logo" />
         </a>
@@ -46,7 +46,7 @@
       </div>
     </header>
     <!-- end header -->
-    <div class="w-40 container row-center mt-32">
+    <div class="w-40 md-w-full container row-center sm-py-12 md-py-12 mt-32">
       <section class="flex flex-col gap-6">
         <div class="flex gap-4 items-center">
           <div class="avatar-reader">
@@ -138,7 +138,7 @@
       />
     </section>
     <!-- end banner  -->
-    <div class="container w-2/3 flex-col gap-12">
+    <div class="container sm-w-full w-2/3 flex-col gap-12">
       <section>
         <h2 class="heading-h2 -tracking-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -211,7 +211,7 @@
     <!-- what to read next  -->
     <div class="container mt-28">
       <h2 class="heading-h2">What to read next</h2>
-      <div class="grid grid-cols-3 gap-8 my-16">
+      <div class="grid grid-cols-3 md-grid-cols-2 sm-grid-cols-1 gap-8 my-16">
         <section class="grid-row">
           <a href="blog-post.html">
             <img
@@ -286,7 +286,9 @@
     </div>
     <!-- end what to read next  -->
     <!-- join our team  -->
-    <section class="container join-our-team my-32">
+    <section
+      class="container md-w-full w-25 text-center md-py-12 sm-py-5 my-32"
+    >
       <h2 class="heading-h2 -tracking-2">
         Join our team to be a part of our story
       </h2>
@@ -343,17 +345,17 @@
         </div>
         <div class="bg-white-5">
           <div class="newsletter-content">
-            <div>
+            <div class="w-50 md-w-full">
               <h2 class="heading-h2 text-white -tracking-2">
                 Subscribe to our news letter to get latest updates and news
               </h2>
             </div>
-            <div class="newsletter-form">
-              <div class="">
+            <div class="newsletter-form w-50 md-w-full">
+              <div class="w-full">
                 <input
                   type="email"
                   placeholder="Enter Your Email"
-                  class="email-input"
+                  class="email-input w-full"
                 />
               </div>
               <div>
@@ -374,16 +376,18 @@
           </div>
           <div class="flex gap-6 row-center text-medium-gray">
             <a href="#" rel="icon">
-              <i class="fa-brands fa-facebook text-medium-gray"></i>
+              <i class="fa-brands fa-facebook text-medium-gray icon-social"></i>
             </a>
             <a href="#" rel="icon">
-              <i class="fa-brands fa-twitter text-medium-gray"></i>
+              <i class="fa-brands fa-twitter text-medium-gray icon-social"></i>
             </a>
             <a href="#" rel="icon">
-              <i class="fa-brands fa-instagram text-medium-gray"></i>
+              <i
+                class="fa-brands fa-instagram text-medium-gray icon-social"
+              ></i>
             </a>
             <a href="#" rel="icon">
-              <i class="fa-brands fa-linkedin text-medium-gray"></i>
+              <i class="fa-brands fa-linkedin text-medium-gray icon-social"></i>
             </a>
           </div>
         </div>
