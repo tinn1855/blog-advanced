@@ -405,7 +405,7 @@
     <!-- list blog (website) -->
     <h4 class="text-center title heading-h4">We Are Featured In</h4>
     <section class="container list-blog my-24">
-      <div class="hidden">
+      <div class="sm-hidden">
         <span>We are</span>
         <h4 class="heading-h4">Featured in</h4>
       </div>
@@ -429,7 +429,7 @@
     <!-- feedback -->
     <section class="container bg-light-yellow my-12">
       <div class="feedback">
-        <div class="feedback-left">
+        <div class="w-40">
           <span>TESTIMONIALs</span>
           <h2 class="heading-h2 mt-5">What people say about our blog</h2>
           <p class="leading-7">
@@ -438,7 +438,49 @@
           </p>
         </div>
         <div class="border"></div>
-        <div class="flex-col row-between feedback-right">
+        <div class="carousel">
+          <div class="carousel-content">
+            <div class="carousel-item">
+              <div class="flex-col row-between">
+                <div>
+                  <h4 class="heading-h4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </h4>
+                </div>
+                <div class="flex gap-4 items-center sm-py-5">
+                  <a href="author.html">
+                    <img
+                      src="assets/images/feedback/reader-01.png"
+                      alt="author"
+                      class="avatar-reader"
+                    />
+                  </a>
+                  <a href="author.html">
+                    <h3>Jonathan Vallem</h3>
+                    <span>New york, USA</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h2>Silde 2</h2>
+            </div>
+            <div class="carousel-item">
+              <h2>Silde 3</h2>
+            </div>
+          </div>
+          <div class="flex items-center gap-6 absolute right-0 bottom-0">
+            <button class="btn-prev-slide">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="btn-next-slide">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          
+        </div>
+        <!-- <div class="flex-col row-between w-60">
           <div>
             <h4 class="heading-h4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -468,7 +510,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- end feedback  -->
@@ -540,5 +582,6 @@
       </div>
     </footer>
     <!-- end footer  -->
+     <script src="assets/js/carousel.js"></script>
   </body>
 </html>

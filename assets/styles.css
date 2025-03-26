@@ -348,7 +348,7 @@ h6 {
   color: var(--color-black);
 }
 
-.btn-arrow {
+.btn-prev-slide {
   background-color: var(--color-white);
   padding: 16px 18px;
   border-radius: 100%;
@@ -356,7 +356,20 @@ h6 {
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
 }
-.btn-arrow:hover {
+.btn-prev-slide:hover {
+  background-color: var(--color-black);
+  color: var(--color-light-gray);
+  transform: scale(1.2);
+}
+.btn-next-slide {
+  background-color: var(--color-white);
+  padding: 16px 18px;
+  border-radius: 100%;
+  border-style: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.btn-next-slide:hover {
   background-color: var(--color-black);
   color: var(--color-light-gray);
   transform: scale(1.2);
@@ -443,11 +456,19 @@ h6 {
   padding: 80px 96px;
   column-gap: 80px;
 }
-.feedback-left {
-  width: 30%;
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
-.feedback-right {
-  width: 65%;
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  min-width: 100%;
+  transition: transform 0.5 ease-in-out;
 }
 
 .item-author:hover {
